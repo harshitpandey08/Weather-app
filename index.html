@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather web app</h1>
+    <form onsubmit="getData(event)" class="searchData">
+      <input id="inputBox" type="text" placeholder="Enter the city name">
+      <button>Search</button>
+    </form>
+
+    <section class="cityWeatherData">
+      <div class="countryDetails details">
+
+        <div class="card">
+          <p>Country Name</p>
+          <p id="countryName">__</p>
+        </div>
+
+        <div class="card">
+          <p>State Name</p>
+          <p id="stateName">__</p>
+        </div>
+
+        <div class="card">
+          <p>City Name</p>
+          <p id="cityName">__</p>
+        </div>
+      </div>
+
+      <div class="WeatherDetails details">
+
+        <div class="card">
+          <p>Humidity</p>
+          <p id="humidity">__</p>
+        </div>
+
+        <div class="card">
+          <p>Wind Speed</p>
+          <p><span id="windSpeed">__</span> KMPH </p>
+        </div>
+
+        <div class="card">
+          <p>Temperature</p>
+          <p><span id="Temperature">__</span>&#8451</p>
+        </div>
+
+        <div class="card">
+          <img width="20px" id="logoImage" src="" alt="icon" />
+          <p id="WeatherStatus">__</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif; /* Adding a font for a better look */
+}
+
+.container {
+  width: 600px;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #f9f9f9; /* Adding a background color for a clean look */
+  border-radius: 8px; /* Slightly rounding the corners */
+}
+
+.cityWeatherData {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Corrected spelling from 'centre' to 'center' */
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Adding a border to distinguish each card */
+  border-radius: 4px; /* Slightly rounding the corners */
+  background-color: #fff; /* Making the card background white */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
